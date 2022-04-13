@@ -14,7 +14,7 @@ const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard',
 function findLongestWord(arr) {
   let longestWord = '';
 
-  for (let i = 0; i < words.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     if (arr[i].length > longestWord.length) {
       longestWord = arr[i];
     }
@@ -22,7 +22,7 @@ function findLongestWord(arr) {
   return longestWord;
 }
 
-//console.log(findLongestWord(words))
+console.log(findLongestWord(words))
 
 // Iteration #3: Calculate the sum
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
@@ -46,7 +46,7 @@ function sum(arr) {
 
   for (let i = 0; i < arr.length; i++) {
     if (typeof arr[i] === 'string') {
-      total += arr.length;
+      total += arr[i].length;
     } else if (typeof arr[i] === 'boolean') {
       total += 1;
     } else if (typeof arr[i] === 'number') {
@@ -112,7 +112,7 @@ function uniquifyArray(arr) {
   let newArray = [];
 
   for (let i = 0; i < arr.length; i++){
-  if (newArray.indexOf(arr[1]) === -1){
+  if (newArray.indexOf(arr[1]) === -i){
     newArray.push(arr[i]);
   } else {
     newArray = newArray
@@ -150,7 +150,7 @@ const wordsCount = [
 function howManyTimes(arr, word) {
 
   let count = 0;
-  for (let i = 0; i < words.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     if (arr[i].includes(word)) {
       
       count += 1;
