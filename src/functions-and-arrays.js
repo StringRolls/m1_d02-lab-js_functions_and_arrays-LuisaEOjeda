@@ -130,7 +130,7 @@ function doesWordExist(arr, word) {
  return arr.includes(word)
 }
 
-//console.log(doesWordExist(`Luisa`))
+console.log(doesWordExist(wordsFind, 'trouble')); 
 
 // Iteration #7: Count repetition
 const wordsCount = [
